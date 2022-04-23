@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import Logo from "../assets/logo.jpg"
+import Logo from "../assets/logo.png"
 import Background from "../assets/background.jpg"
 
 function Register() {
@@ -73,7 +73,8 @@ const FormContainer = styled.div`
         gap: 1rem;
         justify-content: center;
         img {
-            height: 5rem;
+            height: 7rem;
+            border-radius: 0.4rem;
         }
         h1 {
             color: white;
@@ -113,7 +114,16 @@ const FormContainer = styled.div`
             transition: 0.5s ease-in-out;
             &:hover {
                 background-color: #90EE90;
-
+            }
+            }
+            span {
+                color: white;
+                text-transform: uppercase;
+                a {
+                    color: #90EE90;
+                    text-decoration: none;
+                    font-weight: bold;
+                }
             }
         }
     }
