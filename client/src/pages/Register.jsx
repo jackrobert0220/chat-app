@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import Logo from "../assets/logo.jpg"
+import Background from "../assets/background.jpg"
 
 function Register() {
 
@@ -62,7 +63,10 @@ const FormContainer = styled.div`
     justify-content: center;
     gap: 1rem;
     align-items: center;
-    background-color: #131324;
+    background-image: url(${Background});
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     .brand {
         display: flex;
         align-items: center;
@@ -81,6 +85,37 @@ const FormContainer = styled.div`
         flex-direction: column;
         gap: 2rem;
         background-color: #00000076;
+        border-radius: 2rem;
+        padding: 3rem 5rem;
+        input {
+            background-color: transparent;
+            padding: 1rem;
+            border: 0.1rem solid #0BDA51;
+            border-radius: 0.4rem;
+            color: white;
+            width: 100%;
+            font-size: 1rem;
+            &:focus {
+                border: 0.1rem solid #ECFFDC;
+                outline: none;
+            }
+        }
+        button {
+            background-color: #0BDA51;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 0.4rem;
+            font-size: 1rem;
+            text-transform: uppdercase;
+            transition: 0.5s ease-in-out;
+            &:hover {
+                background-color: #90EE90;
+
+            }
+        }
     }
 `;
 
