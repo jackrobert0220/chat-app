@@ -1,6 +1,6 @@
-import React, { useState, } from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import Logo from "../assets/logo.png";
 import Background from "../assets/background.jpg";
 import { ToastContainer, toast } from "react-toastify";
@@ -23,7 +23,14 @@ function Register() {
         pauseOnHover: true,
         draggable: true,
         theme: "dark",
-    }
+    };
+
+    useEffect(() => {
+        if (localStorage.getItem("chat-app-user")) {
+        navigate("/");
+        }
+    // eslint-disable-next-line 
+        }, []);
 
     const handleSubmit = async (event)=> {
         event.preventDefault();

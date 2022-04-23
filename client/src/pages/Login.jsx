@@ -1,4 +1,4 @@
-import React, { useState, } from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { Link, useNavigate } from 'react-router-dom';
 import Logo from "../assets/logo.png";
@@ -9,7 +9,7 @@ import axios from "axios";
 import { loginRoute } from '../utils/APIRoutes';
 
 function Login() {
-    const navigate = useNavigate()
+    const navigate = useNavigate();
     const [values, setValues] = useState({
         username: "",
         password: "",
@@ -21,7 +21,14 @@ function Login() {
         pauseOnHover: true,
         draggable: true,
         theme: "dark",
+    };
+
+   useEffect(() => {
+    if (localStorage.getItem("chat-app-user")) {
+    navigate("/");
     }
+    // eslint-disable-next-line 
+    }, []);
 
     const handleSubmit = async (event)=> {
         event.preventDefault();
