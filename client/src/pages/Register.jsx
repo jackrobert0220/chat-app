@@ -1,17 +1,25 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import Logo from "../assets/logo.png"
 import Background from "../assets/background.jpg"
 
 function Register() {
+    const [values, setValues] = useState({
+        username: "",
+        email: "",
+        password: "",
+        confirmpassword: "",
+    })
 
     const handleSubmit = (event)=> {
         event.preventDefault();
         alert("form");
     };
 
-    const handleChange = (event) => {};
+    const handleChange = (event) => {
+        setValues({...values, [event.target.name]: event.target.value })
+    };
   return (
     <>
         <FormContainer>
@@ -27,6 +35,12 @@ function Register() {
                     onChange={(e) => handleChange(e)} 
                 />
                 <input 
+                    type="email" 
+                    placeholder="Email" 
+                    name="email" 
+                    onChange={(e) => handleChange(e)} 
+                />
+                <input 
                     type="password" 
                     placeholder="Password" 
                     name="password" 
@@ -36,12 +50,6 @@ function Register() {
                     type="password" 
                     placeholder="Confirm Password" 
                     name="confirmPassword" 
-                    onChange={(e) => handleChange(e)} 
-                />
-                <input 
-                    type="text" 
-                    placeholder="Username" 
-                    name="username" 
                     onChange={(e) => handleChange(e)} 
                 />
                 <button type="submit">Create User</button>
