@@ -71,6 +71,16 @@ const FormContainer = styled.div`
         img {
             height: 5rem;
         }
+        h1 {
+            color: white;
+            text-transform: uppercase;
+        }
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        background-color: #00000076;
     }
 `;
 
