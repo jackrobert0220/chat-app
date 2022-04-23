@@ -1,8 +1,11 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import Logo from "../assets/logo.png"
-import Background from "../assets/background.jpg"
+import Logo from "../assets/logo.png";
+import Background from "../assets/background.jpg";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import axios from "axios";
 
 function Register() {
     const [values, setValues] = useState({
@@ -10,16 +13,48 @@ function Register() {
         email: "",
         password: "",
         confirmpassword: "",
-    })
+    });
 
-    const handleSubmit = (event)=> {
+    const toastOptions = {
+        position: "bottom-right",
+        autoClose: 8000,
+        pauseOnHover: true,
+        draggable: true,
+        theme: "dark",
+    }
+
+    const handleSubmit = async (event)=> {
         event.preventDefault();
-        alert("form");
+        if(handleValidation()) {
+        const { password, confirmPassword, username, email } = values;
+            const { data } = await axios.post()
+        }
+    };
+
+    const handleValidation = () => {
+        const { password, confirmPassword, username, email } = values;
+        if (password !== confirmPassword) {
+            toast.error(
+                "Password and Confirm Password do not match.",
+                toastOptions
+            );
+            return false;
+        } else if (username.length < 3) {
+            toast.error("Username has to be greater than 3 characters", toastOptions);
+            return false;
+        } else if (password.length < 8) {
+            toast.error("Password has to be 8 characters or more", toastOptions);
+            return false;
+        } else if (email === "") {
+            toast.error("Email is required", toastOptions);
+        }
+        return true;
     };
 
     const handleChange = (event) => {
         setValues({...values, [event.target.name]: event.target.value })
     };
+
   return (
     <>
         <FormContainer>
@@ -55,10 +90,10 @@ function Register() {
                 <button type="submit">Create User</button>
                 <span>
                 Already have an account? <Link to="/login">Login</Link>
-                </span>
-                
+                </span>             
             </form>
         </FormContainer>
+        <ToastContainer />
     </>
   )
 }
