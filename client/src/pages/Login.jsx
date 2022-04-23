@@ -6,15 +6,13 @@ import Background from "../assets/background.jpg";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
-import { registerRoute } from '../utils/APIRoutes';
+import { loginRoute } from '../utils/APIRoutes';
 
 function Login() {
     const navigate = useNavigate()
     const [values, setValues] = useState({
         username: "",
-        email: "",
         password: "",
-        confirmpassword: "",
     });
 
     const toastOptions = {
@@ -28,10 +26,9 @@ function Login() {
     const handleSubmit = async (event)=> {
         event.preventDefault();
         if(handleValidation()) {
-        const { password, username, email } = values;
-            const { data } = await axios.post(registerRoute, {
+        const { password, username } = values;
+            const { data } = await axios.post(loginRoute, {
                 username,
-                email,
                 password,
             });
 
@@ -46,21 +43,14 @@ function Login() {
     };
 
     const handleValidation = () => {
-        const { password, confirmPassword, username, email } = values;
-        if (password !== confirmPassword) {
+        const { password, username } = values;
+        if (password === "") {
             toast.error(
-                "Password and Confirm Password do not match.",
-                toastOptions
-            );
+                "Email and Password is required", toastOptions);
             return false;
-        } else if (username.length < 3) {
-            toast.error("Username has to be greater than 3 characters", toastOptions);
+        } else if (username.length === "") {
+            toast.error("Email and Password is required", toastOptions);
             return false;
-        } else if (password.length < 8) {
-            toast.error("Password has to be 8 characters or more", toastOptions);
-            return false;
-        } else if (email === "") {
-            toast.error("Email is required", toastOptions);
         }
         return true;
     };
@@ -82,12 +72,7 @@ function Login() {
                     placeholder="Username" 
                     name="username" 
                     onChange={(e) => handleChange(e)} 
-                />
-                <input 
-                    type="email" 
-                    placeholder="Email" 
-                    name="email" 
-                    onChange={(e) => handleChange(e)} 
+                    min="3"
                 />
                 <input 
                     type="password" 
@@ -95,15 +80,9 @@ function Login() {
                     name="password" 
                     onChange={(e) => handleChange(e)} 
                 />
-                <input 
-                    type="password" 
-                    placeholder="Confirm Password" 
-                    name="confirmPassword" 
-                    onChange={(e) => handleChange(e)} 
-                />
-                <button type="submit">Create User</button>
+                <button type="submit">Login</button>
                 <span>
-                Already have an account? <Link to="/login">Login</Link>
+                Don't have an account? <Link to="/register">Register</Link>
                 </span>             
             </form>
         </FormContainer>
