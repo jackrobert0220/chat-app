@@ -23,7 +23,7 @@ export default function SetAvatar() {
         theme: "dark",
     };
 
-// const setProfilePicture = async () => {};
+const setProfilePicture = async () => {};
 
 useEffect(() => {
     const data = [];
@@ -62,10 +62,64 @@ fetchData();
                 })
             }
         </div>
+        <button className="submit-btn" onClick={setProfilePicture}>Set as Profile Picture</button>
     <ToastContainer />
     </Container>
   </>
   )
 }
 
-const Container = styled.div``;
+const Container = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    background-image: url(${Background});
+    height: 100vh;
+    width: 100vw;
+    .loader {
+        max-inline-size: 100%;
+    }
+
+    .title-container {
+        h1 {
+            color: white;
+        }
+    }
+
+    .avatars {
+        display: flex;
+        gap: 2rem;
+        .avatar {
+            border: 0.4rem solid transparent;
+            padding: 0.4rem;
+            border-radius: 5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.5s ease-in-out;
+            img {
+                height: 6rem;
+            }
+        }
+        .selected {
+            border: 0.4rem solid #90EE90;
+        }
+    }
+    .submit-btn {
+        background-color: #0BDA51;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 0.4rem;
+            font-size: 1rem;
+            text-transform: uppdercase;
+            transition: 0.5s ease-in-out;
+            &:hover {
+                background-color: #90EE90;
+            }
+    
+`;
