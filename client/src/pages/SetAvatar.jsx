@@ -23,10 +23,11 @@ export default function SetAvatar() {
         theme: "dark",
     };
 
-const setProfilePicture = async () => {};
+// const setProfilePicture = async () => {};
 
 useEffect(() => {
     const data = [];
+    async function fetchData(){
     for (let i = 0; i < 4; i++) {
         const image = await axios.get(
             `${api}/${Math.round(Math.random() * 1000)}`
@@ -34,8 +35,13 @@ useEffect(() => {
     const buffer = new Buffer(image.data);
     data.push(buffer.toString("base64"));
     }
+
+fetchData() 
     setAvatars(data);
     setIsLoading(false);
+}
+fetchData();
+
   }, []);
 
   return(
