@@ -105,6 +105,9 @@ const Container = styled.div`
     align-items: center;
     flex-direction: column;
     background-image: url(${Background});
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     gap: 3rem;
     height: 100vh;
     width: 100vw;
