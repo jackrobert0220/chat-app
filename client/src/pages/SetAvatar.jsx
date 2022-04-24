@@ -10,7 +10,7 @@ import { setAvatarRoute } from '../utils/APIRoutes';
 import { Buffer } from 'buffer';
 
 export default function SetAvatar() {
-    const api = "https://api.multiavatar.com/4645646";
+    const api = "https://api.multiavatar.com/45678945";
     const navigate = useNavigate();
     const [avatars, setAvatars] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
@@ -23,16 +23,15 @@ export default function SetAvatar() {
         theme: "dark",
     };
 
-const getImage = async () => {
-    return await axios.get(
-        `${api}/${Math.round(Math.random() * 1000)}`
-    )
-}
+const setProfilePicture = async () => {};
 
 useEffect(() => {
     const data = [];
     for (let i = 0; i < 4; i++) {
-    const buffer = new Buffer(getImage.data);
+        const image = await axios.get(
+            `${api}/${Math.round(Math.random() * 1000)}`
+        );
+    const buffer = new Buffer(image.data);
     data.push(buffer.toString("base64"));
     }
     setAvatars(data);
