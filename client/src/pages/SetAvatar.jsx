@@ -23,6 +23,12 @@ export default function SetAvatar() {
         theme: "dark",
     };
 
+useEffect (() => {
+    if(!localStorage.getItem("chat-app-user")) {
+        navigate("/login");
+    }
+})
+
 const setProfilePicture = async () => {
     if(selectedAvatar === undefined) {
         toast.error("Please select an avatar", toastOptions);
@@ -75,7 +81,7 @@ fetchData();
             {avatars.map((avatar, index) => {
                     return (
                         <div key={index} 
-                            className={`avatar ${selectedAvatar === index ?"selected" : ""}`}>
+                            className={`avatar ${selectedAvatar === index ? "selected" : ""}`}>
 
                             <img src={`data:image/svg+xml;base64,${avatar}`} alt="avatar"
                             onClick={() => setSelectedAvatar(index)} />
