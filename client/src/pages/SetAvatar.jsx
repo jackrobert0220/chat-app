@@ -28,7 +28,7 @@ const setProfilePicture = async () => {
         toast.error("Please select an avatar", toastOptions);
     } else {
         const user = await JSON.parse(localStorage.getItem("chat-app-user"));
-        const { data } = await axios.post(`${setAvatarRoute}/{$user._id}`, {
+        const { data } = await axios.post(`${setAvatarRoute}/${user._id}`, {
             image: avatars[selectedAvatar],
         });
         console.log(data);
