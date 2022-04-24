@@ -35,8 +35,6 @@ useEffect(() => {
     const buffer = new Buffer(image.data);
     data.push(buffer.toString("base64"));
     }
-
-fetchData() 
     setAvatars(data);
     setIsLoading(false);
 }
