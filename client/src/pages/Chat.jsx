@@ -4,7 +4,7 @@ import Background from "../assets/background.jpg";
 import axios from "axios";
 import { useNavigate } from 'react-router-dom';
 import { allUsersRoute } from "../utils/APIRoutes";
-import { Contacts} from "../components/Contacts";
+import Contacts from "../components/Contacts";
 
 function Chat() {
   const navigate = useNavigate;
@@ -41,7 +41,7 @@ isUser()
   return (
     <Container>
       <div className="container">
-        <Contacts contacts={contacts} />
+        <Contacts contacts={contacts} currentUser={currentUser}/>
       </div>
     </Container>
   );
