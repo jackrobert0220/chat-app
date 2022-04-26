@@ -66,9 +66,10 @@ const Container = styled.div`
       grid-template-columns: 25% 75%;
       @media screen and (min-width:720px) and (max-width:1080px) {
         grid-template-columns: 35% 65%;
-      @media screen and (min-width:360px) and (max-width:480px) {
+        }
+        @media screen and (min-width:360px) and (max-width:480px) {
         grid-template-columns: 35% 65%;
-      }
+        }
     }
 `
 
