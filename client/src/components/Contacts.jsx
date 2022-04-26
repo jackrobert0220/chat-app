@@ -5,16 +5,15 @@ import logo from "../assets/logo.png";
 export default function Contacts({contacts, currentUser}) {
     const [currentUserName, setCurrentUserName] = useState(undefined);
     const [currentUserImage, setCurrentUserImage] = useState(undefined);
-    // eslint-disable-next-line
     const [currentSelected, setCurrentSelected] = useState(undefined);
     
     useEffect(() => {
+        console.log(contacts)
         if(currentUser) {
             setCurrentUserImage(currentUser.avatarImage);
             setCurrentUserName(currentUser.username);
         }
     }, [currentUser]);
-    // eslint-disable-next-line
     const changeCurrentChat = (index, contact) => {};
 
   return (
@@ -29,7 +28,7 @@ export default function Contacts({contacts, currentUser}) {
                     {
                         contacts.map((contact,index) => {
                             return (
-                                <div className={`contact ${index === currentSelected ?"selected":""}`} key={index} >
+                                <div className={`contact ${index === currentSelected ? "selected" : ""}`} key={index} >
                                     <div className="avatar">
                                         <img src={`data:image/svg+xml;base64,${contact.avatarImage}`} alt="avatar"/>
                                     </div>
@@ -56,7 +55,7 @@ export default function Contacts({contacts, currentUser}) {
 
 const Container = styled.div`
     display: grid;
-    grid-template-columns: 10% 75% 15%;
+    grid-template-rows: 10% 75% 15%;
     overflow: hidden;
     background-color: #080420;
     .brand {
