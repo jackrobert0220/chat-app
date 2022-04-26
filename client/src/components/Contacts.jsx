@@ -14,6 +14,7 @@ export default function Contacts({contacts, currentUser}) {
             setCurrentUserName(currentUser.username);
         }
     }, [currentUser]);
+
     const changeCurrentChat = (index, contact) => {};
 
   return (
@@ -26,7 +27,7 @@ export default function Contacts({contacts, currentUser}) {
                 </div>
                 <div className="contacts">
                     {
-                        contacts.map((contact,index) => {
+                        contacts.map((contact, index) => {
                             return (
                                 <div className={`contact ${index === currentSelected ? "selected" : ""}`} key={index} >
                                     <div className="avatar">
@@ -36,9 +37,8 @@ export default function Contacts({contacts, currentUser}) {
                                         <h3>{contact.username}</h3>
                                     </div>
                                 </div>
-                            )
-                        })
-                    }
+                            );
+                        })}
                 </div>
                 <div className="current-user">
                     <div className="avatar">
@@ -70,18 +70,24 @@ const Container = styled.div`
             color: white;
             text-transform: uppercase;      
         }
-        .contacts {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            overflow: auto;
-            gap: 0.8rem;
-            .contact {
-                background-color: #ffffff39;
+    }
+    .contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: auto;
+        gap: 0.8rem;
+        .contact {
+            background-color: #ffffff39;
+            min-height: 5rem;
+            width: 90%;
+            .avatar {
+                img {
+                    height: 3rem;
+                }
             }
+
         }
     }
-
-
 `;
 

@@ -12,15 +12,14 @@ function Chat() {
   const [currentUser, setCurrentUser] = useState(undefined);
 
   useEffect(() => {
-    async function setUser() {
+
     if(!localStorage.getItem("chat-app-user")) {
       navigate("/login");
   } else {
 
-    setCurrentUser(await JSON.parse(localStorage.getItem("chat-app-user")))
+    setCurrentUser(JSON.parse(localStorage.getItem("chat-app-user")))
   }
-}
-setUser()
+
   }, []);
   
   useEffect(() => {
