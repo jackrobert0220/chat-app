@@ -21,12 +21,14 @@ function Chat() {
   } else {
     setCurrentUser(JSON.parse(localStorage.getItem("chat-app-user")));
     setIsLoaded(true);
+    // eslint-disable-next-line
   }}, []);
   
   useEffect(() => {
 
     if(currentUser) {
       if(currentUser.isAvatarImageSet) {
+        /* Thank you, Gabe and Avisa \m/, (>.<) ,\m/ */
        axios.get(`${allUsersRoute}/${currentUser._id}`).then((res) => {
          console.log(res.data)
          setContacts(res.data)
@@ -36,6 +38,7 @@ function Chat() {
         navigate("/setAvatar");
       }
   }
+  /* Thank you, Rome!!! \m/, (>.<) ,\m/ */
 // eslint-disable-next-line
   }, [currentUser]);
 console.log(contacts);
