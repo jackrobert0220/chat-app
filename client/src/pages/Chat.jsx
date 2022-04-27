@@ -16,16 +16,12 @@ function Chat() {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-
     if(!localStorage.getItem("chat-app-user")) {
       navigate("/login");
   } else {
-
     setCurrentUser(JSON.parse(localStorage.getItem("chat-app-user")));
     setIsLoaded(true);
-  }
-
-  }, []);
+  }}, []);
   
   useEffect(() => {
     async function isUser() {
@@ -56,8 +52,8 @@ isUser()
           />
           {isLoaded && currentChat === undefined ? (
         <Welcome currentUser={currentUser} />
-          ) : (
-            <ChatContainer currentUser={currentUser} />
+          ) : ( 
+            <ChatContainer currentChat={currentChat} />
           )}
       </div>
     </Container>
