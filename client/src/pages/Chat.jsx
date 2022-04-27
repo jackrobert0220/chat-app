@@ -24,19 +24,21 @@ function Chat() {
   }}, []);
   
   useEffect(() => {
-    async function isUser() {
+
     if(currentUser) {
       if(currentUser.isAvatarImageSet) {
-        const data = await axios.get(`${allUsersRoute}/${currentUser._id}`);
-        setContacts(data.data);
+       axios.get(`${allUsersRoute}/${currentUser._id}`).then((res) => {
+         console.log(res.data)
+         setContacts(res.data)
+       });
+       
       } else {
         navigate("/setAvatar");
       }
   }
-}
-isUser()
-  }, []);
-
+// eslint-disable-next-line
+  }, [currentUser]);
+console.log(contacts);
   const handleChatChange = (chat) => {
       setCurrentChat(chat);
   }
