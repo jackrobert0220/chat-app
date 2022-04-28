@@ -1,25 +1,28 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import Logout from './Logout';
 import ChatInput from './ChatInput';
-// import Messages from './Messages';
 import axios from 'axios';
 import { sendMessageRoute, getAllMessagesRoute } from '../utils/APIRoutes';
+import { v4 as uuidv4 } from "uuid";
 
-
-export default function ChatContainer({ currentChat, currentUser }) {
+export default function ChatContainer({ currentChat, currentUser, socket }) {
 
     const [messages, setMessages] = useState([]);
+    const [arrivalMessage, setArrivalMessage] = useState(null);
+    const scrollRef = useRef();
 
-    const getResponse = async () => {
-        const response = await axios.post(getAllMessagesRoute, {
-            from: currentUser._id,
-            to: currentChat._id,
-            });
-            setMessages(response.data)};
+const getResponse = async () => {
+    const response = await axios.post(getAllMessagesRoute, {
+        from: currentUser._id,
+        to: currentChat._id,
+        });
+        setMessages(response.data)};
 
 useEffect(() => {
-     getResponse();
+    if (currentChat) {
+        getResponse();
+    }
      // eslint-disable-next-line
         }, [currentChat]);
 
@@ -29,7 +32,35 @@ useEffect(() => {
             to: currentChat._id,
             message: msg,
         });
+        socket.current.emit("send-msg", {
+            to: currentChat._id,
+            from: currentUser._id,
+            message: msg,
+        });
+
+        const msgs = [...messages];
+        msgs.push({ fromSelf: true, message: msg });
+        setMessages(msgs);
     };
+
+    useEffect(() => {
+        if (socket.current) {
+            socket.current.on("msg-receive", (msg) => {
+                setArrivalMessage({fromSelf:false, message: msg});
+            });
+        }
+ // eslint-disable-next-line
+    }, []);
+
+
+useEffect(() => {
+    arrivalMessage && setMessages((prev) => [...prev, arrivalMessage]);
+}, [arrivalMessage]);
+
+// Animation effect of automatically scrolling to newest message
+useEffect(() => {
+    scrollRef.current?.scrollIntoView({ behaviour: "smooth" });
+}, [messages]);
 
     return (
     <>
@@ -53,7 +84,7 @@ useEffect(() => {
         {
             messages.map((message) => {
                 return (
-                    <div>
+                    <div ref={scrollRef} key={uuidv4()}>
                         <div className={`message ${message.fromSelf ? "sent":"received"}`}>
                             <div className="content">
                                 <p>
