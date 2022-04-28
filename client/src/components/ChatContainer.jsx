@@ -1,13 +1,28 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import Logout from './Logout';
 import ChatInput from './ChatInput';
-import Messages from './Messages';
+// import Messages from './Messages';
 import axios from 'axios';
-import { sendMessageRoute } from '../utils/APIRoutes';
+import { sendMessageRoute, getAllMessagesRoute } from '../utils/APIRoutes';
 
 
 export default function ChatContainer({ currentChat, currentUser }) {
+
+    const [messages, setMessages] = useState([]);
+
+    const getResponse = async () => {
+        const response = await axios.post(getAllMessagesRoute, {
+            from: currentUser._id,
+            to: currentChat._id,
+            });
+            setMessages(response.data)};
+
+useEffect(() => {
+     getResponse();
+     // eslint-disable-next-line
+        }, [currentChat]);
+
     const handleSendMsg = async (msg) => {
         await axios.post(sendMessageRoute, {
             from: currentUser._id,
@@ -15,6 +30,7 @@ export default function ChatContainer({ currentChat, currentUser }) {
             message: msg,
         });
     };
+
     return (
     <>
     {
@@ -32,7 +48,7 @@ export default function ChatContainer({ currentChat, currentUser }) {
         </div>   
         <Logout />
     </div>
-    <Messages />
+    <div className="chat-messages"></div>
     <ChatInput handleSendMsg={handleSendMsg} />
     </Container>
     )}
@@ -64,4 +80,5 @@ const Container = styled.div`
         }
 
     }
+    
 `;
