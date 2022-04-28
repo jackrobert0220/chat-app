@@ -65,14 +65,14 @@ const Container = styled.div`
     .brand {
         display: flex;
         align-items: center;
-        justify-content: center;
         gap: 1rem;
+        justify-content: center;
         img {
-            height: 2rem;
+        height: 2rem;
         }
         h3 {
-            color: white;
-            text-transform: uppercase;      
+        color: white;
+        text-transform: uppercase;
         }
     }
     .contacts {
@@ -82,43 +82,37 @@ const Container = styled.div`
         overflow: auto;
         gap: 0.8rem;
         &::-webkit-scrollbar {
-            width: 0.2rem;
-            &-thumb {
-                background-color: #ffffff39;
-                width: 0.1rem;
-                border-radius: 1rem;
-            }
+        width: 0.2rem;
+        &-thumb {
+            background-color: #ffffff39;
+            width: 0.1rem;
+            border-radius: 1rem;
+        }
         }
         .contact {
-            background-color: #ffffff39;
-            min-height: 5rem;
-            width: 90%;
-            cursor: pointer;
-            border-radius: 0.2rem;
-            padding: 0.4rem;
-            gap: 1rem;
-            align-items: center;
-            display: flex;
-            transition: 0.5s ease-in-out;
-            .avatar {
-                img {
-                    height: 3rem;
-                }
+        background-color: #ffffff34;
+        min-height: 5rem;
+        cursor: pointer;
+        width: 90%;
+        border-radius: 0.2rem;
+        padding: 0.4rem;
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        transition: 0.5s ease-in-out;
+        .avatar {
+            img {
+            height: 3rem;
             }
-            .username {
-                h3 {
-                    color: white;
-                }
+        }
+        .username {
+            h3 {
+            color: white;
             }
+        }
         }
         .selected {
-            background-color: green;
-        }
-        @media screen and (max-width:600px) {
-            img {
-                display: none;
-                font-size: 1rem;
-            }
+        background-color: green;
         }
     }
     .current-user {
@@ -128,24 +122,32 @@ const Container = styled.div`
         align-items: center;
         gap: 2rem;
         .avatar {
-            img {
-                height: 4rem;
-                max-inline-size: 100%;
-            }
+        img {
+            height: 4rem;
+            max-inline-size: 100%;
+        }
         }
         .username {
+        h2 {
+            color: white;
+        }
+        }
+        @media screen and (min-width: 720px) and (max-width: 1080px) {
+        gap: 0.5rem;
+        .username {
             h2 {
-                color: white;
+            font-size: 1rem;
             }
         }
-        @media screen and (min-width:720px) and (max-width:1080px) {
-            gap: 0.5rem;
-            .username {
-                h2 {
-                    font-size: 1rem;
-                }
+        }
+    }
+    @media screen and (min-width: 300px) and (max-width: 600px) {
+        .brand {
+            justify-content: left;
+            h3 {
+                display: none;
             }
-        }       
+        }
     }
 `;
 
