@@ -11,7 +11,7 @@ import { io } from "socket.io-client";
 
 function Chat() {
   const socket = useRef();
-  const navigate = useNavigate;
+  const navigate = useNavigate();
   const [contacts, setContacts] = useState([]);
   const [currentUser, setCurrentUser] = useState(undefined);
   const [currentChat, setCurrentChat] = useState(undefined);
