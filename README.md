@@ -8,12 +8,17 @@
 ![Screen Shot 2022-04-30 at 10 47 56 AM](https://user-images.githubusercontent.com/91999893/166116851-4da933c3-57b8-4569-9e00-97157a095c71.jpeg)
 ![mern_socket](https://user-images.githubusercontent.com/91999893/166116881-d11ad35b-6f36-4330-8941-d9badaa726ac.png)
 
+## Description
 
-Users are able to register, sign in and then chat with other users logged into the application.
+- Users are able to register, sign in and then chat with other users logged into the application.
+- The front-end (client) side uses React while the back-end (server) uses express java script and node.js.
+- The Socket.io library will allow the users' messages to render with little latency or in "real time".
+- Data is stored and served using MongoDB.
 
-The front-end (client) side uses React while the back-end (server) uses express java script and node.js.
-The Socket.io library will allow the users' messages to render with little latency or in "real time".
-Data will be stored and served using MongoDB.
+# Screenshots
+![Screen Shot 2022-04-30 at 10 33 29 AM](https://user-images.githubusercontent.com/91999893/166116990-f5735c5b-4989-43ed-a246-f105900afd64.png)
+![Screen Shot 2022-04-30 at 10 34 27 AM](https://user-images.githubusercontent.com/91999893/166116994-4c4bafe1-6322-4ce0-9a84-c2c1ddb60e17.png)
+![Screen Shot 2022-04-30 at 10 36 24 AM](https://user-images.githubusercontent.com/91999893/166116995-8e0e5ddc-d3be-46df-b96c-7c1c80a8d062.png)
 
 # Wireframes
 <img width="549" alt="Screen Shot 2022-04-19 at 8 45 48 PM" src="https://user-images.githubusercontent.com/91999893/164146258-8a9e1e4a-1c00-46db-be53-a57940ce539c.png">
