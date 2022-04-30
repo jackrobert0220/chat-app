@@ -27,10 +27,9 @@
 
 <img width="537" alt="Screen Shot 2022-04-19 at 8 46 22 PM" src="https://user-images.githubusercontent.com/91999893/164146332-9c676212-6563-4bdd-91d3-c3ad7e704cd6.png">
 
-# ERD
-
-## (Temporary Message Schema)
-<img width="271" alt="Screen Shot 2022-04-19 at 8 50 11 PM" src="https://user-images.githubusercontent.com/91999893/164146755-3483068f-47fa-4c09-9d58-792b79cb5879.png">
+# User and Message Models
+![Screen Shot 2022-04-30 at 11 09 36 AM](https://user-images.githubusercontent.com/91999893/166117476-46b6b1e8-3b8f-42b6-bac6-99cd46e13f30.png)
+![Screen Shot 2022-04-30 at 11 11 58 AM](https://user-images.githubusercontent.com/91999893/166117480-65134b91-0d68-43d7-9451-de80e894689c.png)
 
 ## Dependencies
 <img width="405" alt="Screen Shot 2022-04-19 at 8 51 11 PM" src="https://user-images.githubusercontent.com/91999893/164146807-831c82ec-d6b8-4f43-8c95-e206f5c22bb3.png">
