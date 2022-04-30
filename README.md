@@ -22,8 +22,8 @@
 ![Screen Shot 2022-04-30 at 10 36 24 AM](https://user-images.githubusercontent.com/91999893/166117690-39fe0056-4ae7-42ac-bccc-1079aade60ed.png)
 
 # Wireframes
-<img width="480" alt="Screen Shot 2022-04-19 at 8 45 48 PM" src="https://user-images.githubusercontent.com/91999893/164146258-8a9e1e4a-1c00-46db-be53-a57940ce539c.png">
-<img width="480" alt="Screen Shot 2022-04-19 at 8 46 08 PM" src="https://user-images.githubusercontent.com/91999893/164146304-e679edd9-0700-4084-8994-60ce177f8384.png">
+![Screen Shot 2022-04-19 at 8 45 48 PM](https://user-images.githubusercontent.com/91999893/164146258-8a9e1e4a-1c00-46db-be53-a57940ce539c.png)
+![Screen Shot 2022-04-19 at 8 46 08 PM](user-images.githubusercontent.com/91999893/164146304-e679edd9-0700-4084-8994-60ce177f8384.png)
 <img width="480" alt="Screen Shot 2022-04-19 at 8 46 22 PM" src="https://user-images.githubusercontent.com/91999893/164146332-9c676212-6563-4bdd-91d3-c3ad7e704cd6.png">
 
 # User and Message Models
