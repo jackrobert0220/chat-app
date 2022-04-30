@@ -26,9 +26,10 @@
 ![Screen Shot 2022-04-30 at 11 23 48 AM](https://user-images.githubusercontent.com/91999893/166117896-c7052578-8982-4c4b-8cfd-ffb6e3b93cbd.png)
 ![Screen Shot 2022-04-30 at 11 23 58 AM](https://user-images.githubusercontent.com/91999893/166117909-ac1149aa-41c1-4b4d-87c2-368d95563fd7.png)
 
-# User and Message Models
+# User and Message Model
+![Screen Shot 2022-04-30 at 11 09 27 AM](https://user-images.githubusercontent.com/91999893/166117952-f1b183f3-4369-4d0a-a19b-21f3173dd992.png)
 ![Screen Shot 2022-04-30 at 11 09 36 AM](https://user-images.githubusercontent.com/91999893/166117476-46b6b1e8-3b8f-42b6-bac6-99cd46e13f30.png)
-![Screen Shot 2022-04-30 at 11 11 58 AM](https://user-images.githubusercontent.com/91999893/166117480-65134b91-0d68-43d7-9451-de80e894689c.png)
+
 
 ## Dependencies
 <img width="405" alt="Screen Shot 2022-04-19 at 8 51 11 PM" src="https://user-images.githubusercontent.com/91999893/164146807-831c82ec-d6b8-4f43-8c95-e206f5c22bb3.png">
