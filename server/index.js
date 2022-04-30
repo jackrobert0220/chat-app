@@ -24,7 +24,7 @@ mongoose.connect(process.env.MONGO_URL, {
 });
 
 const server = app.listen(process.env.PORT || 5000,() => {
-    console.log(`Server started on Port ${process.env.PORT}`)
+    console.log(`Server started on Port ${process.env.PORT || 5000}`)
 });
 
 // Socket.io Connection
