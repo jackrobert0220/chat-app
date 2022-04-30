@@ -5,8 +5,7 @@
 
 # Chat App - A real-time chat application built using the MERN stack with socket.io
 
-![logo](https://user-images.githubusercontent.com/91999893/166116612-042c4448-3f13-48fd-a00a-efff83617e8c.svg)
-
+![Screen Shot 2022-04-30 at 10 47 56 AM](https://user-images.githubusercontent.com/91999893/166116737-964fb4d5-4132-48a4-8292-ddb5ce6fc136.png)
 
 ![MERN_stack](https://user-images.githubusercontent.com/91999893/164145911-0ee8a603-1246-4cfe-80d5-14ce8392850b.png)
 
