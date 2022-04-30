@@ -16,7 +16,7 @@
 - Data is stored and served using MongoDB.
 
 ## Screenshots
-## Logo and wallpaper designed by Matthew Morris [![mcmorrisdesign](https://img.shields.io/badge/<Instagram>-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/mcmorrisdesign)
+## Logo and wallpaper designed by Matthew Morris [![Instagram](https://img.shields.io/badge/<mcmorrisdesign>-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/mcmorrisdesign)
 ![Screen Shot 2022-04-30 at 10 33 29 AM](https://user-images.githubusercontent.com/91999893/166117651-9dbcb4b9-d45d-45d7-b600-bdd3b25152b8.png)
 ![Screen Shot 2022-04-30 at 10 33 52 AM](https://user-images.githubusercontent.com/91999893/166117665-e68a96e5-8fa3-4cfb-9b8d-5143f6d882a3.png)
 ![Screen Shot 2022-04-30 at 10 34 27 AM](https://user-images.githubusercontent.com/91999893/166117688-c097c5e0-9bf0-4468-98a8-c9f3e58412d9.png)
