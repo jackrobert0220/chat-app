@@ -57,8 +57,8 @@ function Chat() {
 
   const handleChatChange = (chat) => {
       setCurrentChat(chat);
-  }
-  
+  };
+
   return (
     <Container>
       <div className="container">

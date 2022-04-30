@@ -69,3 +69,18 @@ module.exports.getAllUsers = async (req, res, next) => {
         next(ex);
     }
 };
+
+module.exports.deleteUser = async (req, res) => {
+    User.findByIdAndDelete(req.params.id, (ex, deletedUser) => {
+        if(ex){
+            return res.status(200).json({msg: "Error with delete."})}
+            else {
+                
+            return res.status(200).json({
+            data: deletedUser,
+        })}
+    });
+
+};
+    
+

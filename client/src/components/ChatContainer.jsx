@@ -6,6 +6,7 @@ import axios from 'axios';
 import { sendMessageRoute, getAllMessagesRoute } from '../utils/APIRoutes';
 import { v4 as uuidv4 } from "uuid";
 
+
 export default function ChatContainer({ currentChat, currentUser, socket }) {
 
     const [messages, setMessages] = useState([]);
@@ -62,6 +63,20 @@ useEffect(() => {
     scrollRef.current?.scrollIntoView({ behaviour: "smooth" });
 }, [messages]);
 
+
+const deleteUser = async (e) => {
+    e.preventDefault()
+    try {
+    await axios.delete(`http://localhost:5000/api/auth/deleteUser/${currentUser._id}`);
+    localStorage.removeItem("chat-app-user");
+} catch(ex) {
+    console.log(ex)
+}
+window.location.reload();
+}
+
+
+
     return (
     <>
     {
@@ -76,7 +91,10 @@ useEffect(() => {
             <div className="username">
                 <h3>{currentChat.username}</h3>
             </div>
-        </div>   
+        </div>  
+        <button onClick={deleteUser} className="delete">
+                                ❌ Self-Destruct ❌
+                            </button>
         <Logout />
     </div>
     <div className="chat-messages">
@@ -90,7 +108,7 @@ useEffect(() => {
                                 <p>
                                     {message.message}
                                 </p>
-                            </div>
+                            </div>                 
                         </div>
                     </div>
                 );
@@ -169,6 +187,9 @@ const Container = styled.div`
     }
         .received {
             justify-content: flex-start;
+            .delete {
+                display: none;
+            }
             .content {
                 background-color: green;
             }
