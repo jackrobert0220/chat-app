@@ -15,18 +15,18 @@
 - The Socket.io library will allow the users' messages to render with little latency or in "real time".
 - Data is stored and served using MongoDB.
 
-# Screenshots
+## Screenshots
 ![Screen Shot 2022-04-30 at 10 33 29 AM](https://user-images.githubusercontent.com/91999893/166117651-9dbcb4b9-d45d-45d7-b600-bdd3b25152b8.png)
 ![Screen Shot 2022-04-30 at 10 33 52 AM](https://user-images.githubusercontent.com/91999893/166117665-e68a96e5-8fa3-4cfb-9b8d-5143f6d882a3.png)
 ![Screen Shot 2022-04-30 at 10 34 27 AM](https://user-images.githubusercontent.com/91999893/166117688-c097c5e0-9bf0-4468-98a8-c9f3e58412d9.png)
 ![Screen Shot 2022-04-30 at 10 36 24 AM](https://user-images.githubusercontent.com/91999893/166117690-39fe0056-4ae7-42ac-bccc-1079aade60ed.png)
 
-# Wireframes
+## Wireframes
 ![Screen Shot 2022-04-30 at 11 23 40 AM](https://user-images.githubusercontent.com/91999893/166117884-6f72964f-cbb1-449d-aad3-fd51af780bb9.png)
 ![Screen Shot 2022-04-30 at 11 23 48 AM](https://user-images.githubusercontent.com/91999893/166117896-c7052578-8982-4c4b-8cfd-ffb6e3b93cbd.png)
 ![Screen Shot 2022-04-30 at 11 23 58 AM](https://user-images.githubusercontent.com/91999893/166117909-ac1149aa-41c1-4b4d-87c2-368d95563fd7.png)
 
-# User and Message Model
+## User and Message Model
 ![Screen Shot 2022-04-30 at 11 09 27 AM](https://user-images.githubusercontent.com/91999893/166117952-f1b183f3-4369-4d0a-a19b-21f3173dd992.png)
 ![Screen Shot 2022-04-30 at 11 09 36 AM](https://user-images.githubusercontent.com/91999893/166117476-46b6b1e8-3b8f-42b6-bac6-99cd46e13f30.png)
 
