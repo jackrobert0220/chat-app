@@ -50,7 +50,3 @@ $ yarn add socket.io
 ![Screen Shot 2022-04-30 at 11 09 36 AM](https://user-images.githubusercontent.com/91999893/166117476-46b6b1e8-3b8f-42b6-bac6-99cd46e13f30.png)
 
 
-## Dependencies
-<img width="405" alt="Screen Shot 2022-04-19 at 8 51 11 PM" src="https://user-images.githubusercontent.com/91999893/164146807-831c82ec-d6b8-4f43-8c95-e206f5c22bb3.png">
-
-<img width="182" alt="Screen Shot 2022-04-19 at 8 51 58 PM" src="https://user-images.githubusercontent.com/91999893/164146889-5e3dce3b-243e-4aad-bc04-f72f6b666c5e.png">
