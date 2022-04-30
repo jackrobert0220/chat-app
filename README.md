@@ -22,6 +22,22 @@
 ![Screen Shot 2022-04-30 at 10 34 27 AM](https://user-images.githubusercontent.com/91999893/166117688-c097c5e0-9bf0-4468-98a8-c9f3e58412d9.png)
 ![Screen Shot 2022-04-30 at 10 36 24 AM](https://user-images.githubusercontent.com/91999893/166117690-39fe0056-4ae7-42ac-bccc-1079aade60ed.png)
 
+## Setup
+### "client" folder dependencies:
+```
+$ npx create-react-ap
+$ npm init
+$ npm i express mongoose nodemon socket.io bcrypt cors dotenv
+$ yarn add axios styled-components react-router-dom
+react-toastify buffer react-icons emoji-picker-react socket.io-client font-awesome
+```
+### "server" folder dependencies:
+```
+$ npm init
+$ npm i dotenv
+$ yarn add socket.io
+```
+
 ## Wireframes
 ![Screen Shot 2022-04-30 at 11 23 40 AM](https://user-images.githubusercontent.com/91999893/166117884-6f72964f-cbb1-449d-aad3-fd51af780bb9.png)
 ![Screen Shot 2022-04-30 at 11 23 48 AM](https://user-images.githubusercontent.com/91999893/166117896-c7052578-8982-4c4b-8cfd-ffb6e3b93cbd.png)
