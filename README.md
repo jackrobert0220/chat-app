@@ -3,9 +3,10 @@
 [![Instagram](https://img.shields.io/badge/<Instagram>-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/jackglazzzer)
 [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jack-glazer)
 
-# Chat App
+# Chat App - A real-time chat application built using the MERN stack with socket.io
 
-A real-time chat application built using the MERN stack with socket.io
+![logo](https://user-images.githubusercontent.com/91999893/166116612-042c4448-3f13-48fd-a00a-efff83617e8c.svg)
+
 
 ![MERN_stack](https://user-images.githubusercontent.com/91999893/164145911-0ee8a603-1246-4cfe-80d5-14ce8392850b.png)
 
