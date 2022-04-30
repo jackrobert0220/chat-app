@@ -11,5 +11,12 @@
     },
     "engines": {
         "node": "17.9.0"
-    }
+    },
+    "main": "index.js",
+    "repository": "https://github.com/jackrobert0220/chat-app.git",
+    "author": "jackrobert0220 <jackrobert0220@gmail.com>",
+    "license": "MIT",
+    "workspaces": [
+        "client", "server"
+    ]
 }
