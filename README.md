@@ -16,9 +16,10 @@
 - Data is stored and served using MongoDB.
 
 # Screenshots
-![Screen Shot 2022-04-30 at 10 33 29 AM](https://user-images.githubusercontent.com/91999893/166116990-f5735c5b-4989-43ed-a246-f105900afd64.png)
-![Screen Shot 2022-04-30 at 10 34 27 AM](https://user-images.githubusercontent.com/91999893/166116994-4c4bafe1-6322-4ce0-9a84-c2c1ddb60e17.png)
-![Screen Shot 2022-04-30 at 10 36 24 AM](https://user-images.githubusercontent.com/91999893/166116995-8e0e5ddc-d3be-46df-b96c-7c1c80a8d062.png)
+![Screen Shot 2022-04-30 at 10 33 29 AM](https://user-images.githubusercontent.com/91999893/166117547-d5b487ed-1e7b-443b-b6bb-7fd3f30145eb.png)
+![Screen Shot 2022-04-30 at 10 33 52 AM](https://user-images.githubusercontent.com/91999893/166117552-00bc6caf-bd06-4cef-9839-cc882812ed0a.png)
+![Screen Shot 2022-04-30 at 10 34 27 AM](https://user-images.githubusercontent.com/91999893/166117554-67459e19-327e-4576-9b50-082ae6e0dfa7.png)
+![Screen Shot 2022-04-30 at 10 36 24 AM](https://user-images.githubusercontent.com/91999893/166117556-f996dc1c-8fd1-4cfd-99f3-b7e17568e228.png)
 
 # Wireframes
 <img width="549" alt="Screen Shot 2022-04-19 at 8 45 48 PM" src="https://user-images.githubusercontent.com/91999893/164146258-8a9e1e4a-1c00-46db-be53-a57940ce539c.png">
