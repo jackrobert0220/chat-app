@@ -16,8 +16,9 @@
 - Data is stored and served using MongoDB.
 
 # Screenshots
-![Screen Shot 2022-04-30 at 10 33 29 AM](https://user-images.githubusercontent.com/91999893/166117626-3ec12d23-34f8-4d6c-a792-dc69a506f7e7.png)
-![Screen Shot 2022-04-30 at 10 33 52 AM](https://user-images.githubusercontent.com/91999893/166117631-7cf4d629-07d8-46d4-99b7-3bb7bdd98924.png)
+![Screen Shot 2022-04-30 at 10 33 29 AM](https://user-images.githubusercontent.com/91999893/166117651-9dbcb4b9-d45d-45d7-b600-bdd3b25152b8.png)
+![Screen Shot 2022-04-30 at 10 33 52 AM](https://user-images.githubusercontent.com/91999893/166117665-e68a96e5-8fa3-4cfb-9b8d-5143f6d882a3.png)
+
 
 
 
