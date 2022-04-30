@@ -11,8 +11,8 @@
 ## Description
 
 - Users are able to register, sign in and then chat with other users logged into the application.
-- The front-end (client) side uses React while the back-end (server) uses express java script and node.js.
-- The Socket.io library will allow the users' messages to render with little latency or in "real time".
+- The front-end (client) side uses Express Java Script in React while the back-end (server) uses node.js.
+- The Socket.io library will allow the user's messages to render with little latency or in "real time".
 - Data is stored and served using MongoDB.
 
 ## Screenshots
