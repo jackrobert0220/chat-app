@@ -1,7 +1,7 @@
 [![GitHub](https://img.shields.io/badge/jackrobert0220-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://www.github.com/jackrobert0220)
 [![Twitter](https://img.shields.io/badge/<jackglazzzer>-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white)](https://www.twitter.com/jackglazzzer)
 [![Instagram](https://img.shields.io/badge/<jackglazzzer>-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/jackglazzzer)
-[![LinkedIn](https://img.shields.io/badge/<Jack-Glazer-linkedin>-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jack-glazer)
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jack-glazer)
 
 # Chat App - A real-time chat application built using the MERN stack with socket.io
 
@@ -72,6 +72,13 @@ Thank you to:
 [StackOverflow](https://stackoverflow.com/)
 
 [W3Schools](https://www.w3schools.com/)
+
+And of course... the wonderful instructors of [General Assembly](https://generalassemb.ly/?&topic=&mkt_account_id=1056949875&mkt_campaign_id=691438924&mkt_ad_group_id=33353652422&mkt_device_type=c&mkt_keyword=general%20assembly&mkt_matchtype=e&mkt_placement=&mkt_ad_id=155686987642&mkt_network=g&mkt_target_id=kwd-459322816&mkt_feed_item_id=&utm_source=google&utm_medium=paid-search-bra&utm_campaign=TS:TX:BRA:LAX:BR:GeneralAssembly&utm_content=campus-lead-lander&utm_term=general%20assembly&gclid=Cj0KCQjwpcOTBhCZARIsAEAYLuX25l3ut9WrnFFaoznGN8ZT9YtLQiog3rxATchjJG_7LTNH1p1F-l8aAnz0EALw_wcB) for all of your time and guidance!
+
+```
+$ git push
+$ git paid
+```
 
 
 
