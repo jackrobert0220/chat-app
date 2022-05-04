@@ -67,7 +67,7 @@ $ yarn add socket.io
 ## Acknowledgements
 Thank you to:
 
-[![nabilk11](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/nabilk11) for being an awesome React dev!
+[![GitHub](https://img.shields.io/badge/nabilk11-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/nabilk11) for being an awesome React dev!
 
 [StackOverflow](https://stackoverflow.com/)
 
