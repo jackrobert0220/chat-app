@@ -66,6 +66,6 @@ $ yarn add socket.io
 
 ## Acknowledgements
 Thank you to:
-![Stack Overflow](https://stackoverflow.com/)
+[Stack Overflow](https://stackoverflow.com/)
 
 
