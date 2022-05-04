@@ -49,6 +49,7 @@ const setProfilePicture = async () => {
     }
 };
 
+// Function that selects 4 random images from the Avatar API to choose from
 useEffect(() => {
     const data = [];
     async function fetchData(){

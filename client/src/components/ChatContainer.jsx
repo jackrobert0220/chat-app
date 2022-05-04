@@ -27,6 +27,7 @@ useEffect(() => {
      // eslint-disable-next-line
         }, [currentChat]);
 
+// Sets path of message being sent to correct user with socket connection
     const handleSendMsg = async (msg) => {
         await axios.post(sendMessageRoute, {
             from: currentUser._id,
@@ -44,6 +45,7 @@ useEffect(() => {
         setMessages(msgs);
     };
 
+// Establishes socket connection
     useEffect(() => {
         if (socket.current) {
             socket.current.on("msg-receive", (msg) => {
@@ -63,7 +65,7 @@ useEffect(() => {
     scrollRef.current?.scrollIntoView({ behaviour: "smooth" });
 }, [messages]);
 
-
+// Function for Self-Destruct Button
 const deleteUser = async (e) => {
     e.preventDefault()
     try {

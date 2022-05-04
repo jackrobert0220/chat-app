@@ -10,6 +10,7 @@ module.exports.register = async (req, res, next) => {
     const emailCheck = await User.findOne({ email });
     if(emailCheck)
         return res.json({ msg: "Email already used", status: false });
+    // Bcrypt used to encrypt user's password in the database
     const hashedPassword = await bcrypt.hash(password, 10);
     const user = await User.create({
         email,
