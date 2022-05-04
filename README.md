@@ -1,7 +1,7 @@
 [![GitHub](https://img.shields.io/badge/jackrobert0220-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://www.github.com/jackrobert0220)
 [![Twitter](https://img.shields.io/badge/<jackglazzzer>-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white)](https://www.twitter.com/jackglazzzer)
 [![Instagram](https://img.shields.io/badge/<jackglazzzer>-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/jackglazzzer)
-[![LinkedIn](https://img.shields.io/badge/Jack-Glazer-linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jack-glazer)
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jack-glazer)
 
 # Chat App - A real-time chat application built using the MERN stack with socket.io
 
