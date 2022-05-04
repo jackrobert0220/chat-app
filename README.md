@@ -67,9 +67,13 @@ $ yarn add socket.io
 ## Acknowledgements
 Thank you to:
 
+Matthew Morris [![Instagram](https://img.shields.io/badge/<mcmorrisdesign>-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/mcmorrisdesign) for the amazing wallpaper and logo!
+
 [![GitHub](https://img.shields.io/badge/nabilk11-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/nabilk11) for being an awesome React dev!
 
 [StackOverflow](https://stackoverflow.com/)
+
+[Medium](https://medium.com/)
 
 [W3Schools](https://www.w3schools.com/)
 
