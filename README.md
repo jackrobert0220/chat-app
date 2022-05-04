@@ -79,7 +79,7 @@ And of course... the wonderful instructors of [General Assembly](https://general
 $ git push
 $ git paid
 ```
-
+- [Back to Top ⬆️](#application-link)
 
 
 
