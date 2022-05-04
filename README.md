@@ -66,6 +66,15 @@ $ yarn add socket.io
 
 ## Acknowledgements
 Thank you to:
-[Stack Overflow](https://stackoverflow.com/)
+
+[![nabilk11](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/nabilk11) for being an awesome React dev!
+
+[StackOverflow](https://stackoverflow.com/)
+
+[W3Schools](https://www.w3schools.com/)
+
+
+
+
 
 
